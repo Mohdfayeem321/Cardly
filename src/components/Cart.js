@@ -24,14 +24,8 @@ function Cart() {
     };
 
     // Retrieve cart data from local storage and parse it from JSON
-    const storedCartData = localStorage.getItem('cart');
 
-    if (storedCartData) {
-        const cart = JSON.parse(storedCartData);
-        // Do something with the cart data, e.g., display it on the UI
-    } else {
-        // Handle case where cart data is not found in local storage
-    }
+    const storedCartData = localStorage.getItem('cart');
 
     const products = useSelector((state) => state.cart);
 

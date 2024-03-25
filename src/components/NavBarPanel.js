@@ -15,8 +15,6 @@ function NavBarPanel() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container fluid>
-                {/* <Navbar.Brand href="/">Homepage</Navbar.Brand> */}
-
                 <Nav>
                     <Nav.Link to="/" as={Link}>
                         Homepage

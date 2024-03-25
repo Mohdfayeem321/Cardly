@@ -14,7 +14,6 @@ const SignIn = () => {
     const handleSignIn = async (e) => {
         try {
             e.preventDefault();
-            // Implement signin logic here
             dispatch(login());
             const response = await axios.post("api/signin",
                 {

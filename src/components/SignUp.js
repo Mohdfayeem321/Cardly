@@ -9,15 +9,12 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
 
     const navigate = useNavigate();
-    // let token = localStorage.getItem("x-api-key");
 
     const handleSignUp = async (e) => {
 
         try {
 
             e.preventDefault();
-            // Implement signup logic here
-            // Make the Axios POST request
             const response = await axios.post(
                 "api/signup",
                 {
@@ -28,7 +25,6 @@ const SignUp = () => {
                 {
                     headers: {
                         "Content-Type": "application/json",
-                        // "x-api-key": token,
                     },
                 }
             );
